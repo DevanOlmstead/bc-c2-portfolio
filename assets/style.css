@@ -4,8 +4,8 @@
 
 :root {
     --light-secondary: rgb(135, 173, 255);
-    --dark-secondary: rgba(49, 108, 49, 0.403); 
-    --light-accent: rgb(225, 229, 109);
+    --dark-secondary: rgb(20, 62, 20); 
+    --light-accent: rgb(230, 230, 140);
     --dark-primary: rgba(7, 7, 89, 0.868);
     --tertiary: rgb(203, 203, 142);
 }
@@ -40,10 +40,8 @@ header {
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--light-secondary);
-  box-shadow: 5px 5px 35px var(--light-accent);
+  border: 1rem inset var(--dark-secondary);
 }
-
-
 
 header h1 {
     color: var(--dark-primary);
@@ -56,4 +54,59 @@ header h1 {
 .Olmstead {
     color: var(--light-accent);
     text-shadow: 1px 1px var(--dark-primary);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--dark-primary);
+    text-shadow: 1px 1px var(--light-accent);
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    color: var(--light-accent);
+    text-shadow: 1px 1px var(--dark-primary);
+}
+
+.hero-banner {
+    background: var(--tertiary);
+    background-image: url("./assets/immages/city lights.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--dark-secondary);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex;
+    align-items: right;
+}
+
+.hero-banner div {
+    flex: 0 0 90%;
+  }
+
+#headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 10px inset var(--dark-secondary);
+}
+
+.hero-banner h2 {
+  color: var(--dark-primary);
+  text-shadow: 1px 1px var(--light-accent);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline; 
 }
