@@ -88,7 +88,7 @@ nav a:last-child {
   
   .hero-banner {
     background: rgb(68, 88, 120);
-    background-image: url("../images/city-lights.jpeg"), linear-gradient(180deg, var(--light-secondary) 0%, var(--light-accent) 100%);
+    background-image: url("./images/city-lights.jpeg"), linear-gradient(180deg, var(--light-secondary) 0%, var(--light-accent) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -106,9 +106,8 @@ nav a:last-child {
   }
   
   .hero-banner h2 {
-    background-color: var(--dark-secondary);
-    color: var(--dark-primary);
-    text-shadow: 1px 1px var(--light-accent);
+    color: var(--light-accent);
+    text-shadow: 1px 1px var(--dark-primary);
     margin: 0;
     padding: 5px 10px;
     font-size: 2.3rem;
@@ -228,23 +227,23 @@ nav a:last-child {
   
   /* portfolio project images */
   .park-finder {
-    background-image: url("../images/park-finder.jpeg");
+    background-image: url("./images/park-finder.jpeg");
   }
   
   .led-wall {
-    background-image: url("../images/led-board.jpeg");
+    background-image: url("./images/led-board.jpeg");
   }
   
   .react-calc {
-    background-image: url("../images/calculator.jpeg");
+    background-image: url("./images/calculator.jpeg");
   }
   
   .mathteroids {
-    background-image: url("../images/.mathteroids.jpeg");
+    background-image: url("./images/mathteroids.png");
   }
   
   .fake-language {
-    background-image: url("../images/.fake-language.jpeg");
+    background-image: url("./images/fake-language.png");
   }
   
   @media screen and (max-width: 980px) {
