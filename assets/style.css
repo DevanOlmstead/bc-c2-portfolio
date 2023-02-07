@@ -5,7 +5,7 @@
 :root {
     --light-secondary: rgb(141, 177, 255);
     --dark-secondary: rgb(17, 65, 15); 
-    --light-accent: rgb(17, 63, 23);
+    --light-accent: rgb(188, 238, 195);
     --dark-primary: rgba(27, 27, 109, 0.868);
     --tertiary: rgb(203, 203, 142);
 }
@@ -41,7 +41,7 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  background-color: var(--light-secondary);
+  background-color: whitesmoke;
   border: 1rem inset var(--dark-primary);
 }
 
@@ -191,13 +191,13 @@ nav a:last-child {
   }
   
   .flex-item div {
-    background-color: var(--light-accent);
+    flex-wrap: wrap;
+    background-color: rgba(245, 245, 245, 0.251);
     padding: 8px 10px;
+    border: 5px dotted black;
+    font-size: auto;
   }
-  
-  .flex-item h3 {
-    font-size: 1.6rem;
-  }
+
   
   .contact address {
     display: flex;
