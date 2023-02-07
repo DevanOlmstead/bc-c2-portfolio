@@ -30,6 +30,7 @@ h6 {
 
 p {
     margin: 0;
+    font-family:'Times New Roman', Times, serif;
 }
 
 header {
@@ -76,37 +77,42 @@ nav a:hover {
     text-shadow: 1px 1px var(--dark-primary);
 }
 
-.hero-banner {
-    background: var(--tertiary);
-    background-image: url("./assets/immages/city lights.jpeg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: soft-light;
-    min-height: 30vh;
-    color: var(--dark-secondary);
-    padding: 2% 6%;
-    display: flex;
-    justify-content: flex;
-    align-items: right;
-}
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.hero-banner div {
-    flex: 0 0 90%;
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+.page-section h2 {
+    flex: 0 0 20%;
+    text-align: left;
+    padding-right: 15px;
+    border-right: 4px dotted var(--dark-secondary);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+.page-section div {
+    flex: 0 0 50%;
+  }
+  
+.page-section p {
+    margin-bottom: 20px;
   }
 
 #headshot {
-    width: 200px;
-    height: 200px;
+    margin: 10%;
+    width: 100px;
+    height: 100px;
     border-radius: 100%;
-    border: 10px inset var(--dark-secondary);
-}
-
-.hero-banner h2 {
-  color: var(--dark-primary);
-  text-shadow: 1px 1px var(--light-accent);
-  margin: 0;
-  padding: 5px 10px;
-  font-size: 2.3rem;
-  line-height: 1.2;
-  display: inline; 
 }
