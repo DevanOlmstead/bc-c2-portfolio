@@ -77,6 +77,45 @@ nav a:hover {
     text-shadow: 1px 1px var(--dark-primary);
 }
 
+nav a:last-child {
+    margin-right: 0;
+  }
+ 
+  main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  
+  .hero-banner {
+    background: rgb(68, 88, 120);
+    background-image: url("../images/city-lights.jpeg"), linear-gradient(180deg, var(--light-secondary) 0%, var(--light-accent) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--tertiary);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .hero-banner div {
+    flex: 0 0 90%;
+  }
+  
+  .hero-banner h2 {
+    background-color: var(--dark-secondary);
+    color: var(--dark-primary);
+    text-shadow: 1px 1px var(--light-accent);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+  }
+
 .page-wrapper {
     max-width: 88%;
     margin-left: auto;
@@ -189,26 +228,24 @@ nav a:hover {
   
   /* portfolio project images */
   .park-finder {
-    background-image: url("../images/02-run-buddy.jpg");
+    background-image: url("../images/park-finder.jpeg");
   }
   
   .led-wall {
-    background-image: url("../images/02-portfolio-1.jpg");
+    background-image: url("../images/led-board.jpeg");
   }
   
   .react-calc {
-    background-image: url("../images/02-portfolio-2.jpg");
+    background-image: url("../images/calculator.jpeg");
   }
   
   .mathteroids {
-    background-image: url("../images/02-portfolio-3.jpg");
+    background-image: url("../images/.mathteroids.jpeg");
   }
   
   .fake-language {
-    background-image: url("../images/02-portfolio-4.jpg");
+    background-image: url("../images/.fake-language.jpeg");
   }
-  
-  /* end portfolio project images */
   
   @media screen and (max-width: 980px) {
     header {
@@ -235,7 +272,7 @@ nav a:hover {
   
     .page-section > h2 {
       border-right: none;
-      border-bottom: 4px solid var(--primary);
+      border-bottom: 4px solid var(--dark-primary);
       margin-bottom: 20px;
       padding-bottom: 10px;
       text-align: left;
